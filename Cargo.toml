@@ -1,0 +1,21 @@
+[package]
+name = "wait_file_created"
+version = "0.1.0"
+authors = ["Martin Habovstiak <martin.habovstiak@gmail.com>"]
+description = "Robust implementation of waiting for file to be created."
+homepage = "https://github.com/Kixunil/wait_file_created"
+repository = "https://github.com/Kixunil/wait_file_created"
+readme = "README.md"
+keywords = ["filesystem", "inotify"]
+categories = ["filesystem", "os::linux-apis"]
+license = "MITNFA"
+edition = "2018"
+
+[dependencies]
+inotify = { version = "0.9.3", default-features = false }
+
+[dev-dependencies]
+mktemp = "0.4.1"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
